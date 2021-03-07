@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
 
 import javax.persistence.AttributeConverter;
-import java.util.Objects;
 
 /**
  * @Author Hariom Yadav
@@ -23,7 +22,7 @@ public class MovieAttributeConvertor implements AttributeConverter<MovieAttribut
     @SneakyThrows
     @Override
     public MovieAttribute convertToEntityAttribute(String s) {
-        if (s == null ) return new MovieAttribute();
+        if (s == null || s.equals("")) return new MovieAttribute();
         return objectMapper.readValue(s, MovieAttribute.class);
     }
 }

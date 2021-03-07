@@ -37,7 +37,7 @@ public class Show extends BaseEntity {
     Long movieLength;//start - end time
 
     @Convert(converter = WeekDayConvert.class)
-    WeekDay weekDay;
+    WeekDay weekDay;//this is simple pojo and inside that also simple pojo list
 
     @Transient
     List<Days> days = new ArrayList<>();

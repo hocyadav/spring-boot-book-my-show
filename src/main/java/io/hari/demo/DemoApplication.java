@@ -66,7 +66,7 @@ public class DemoApplication implements CommandLineRunner {
         final Duration between1 = Duration.between(startTime, endTime);
         System.out.println("between1.toMinutes() = " + between1.toMinutes());
 
-        final Show show1 = Show.builder().showName("show1").movies(Arrays.asList(movie1))
+        final Show show1 = Show.builder().showName("show1 - afternoon show").movies(Arrays.asList(movie1))
                 .startTime(startTime)
                 .endTime(endTime)
                 .movieLength(Duration.between(startTime, endTime).toMinutes())
@@ -136,7 +136,7 @@ public class DemoApplication implements CommandLineRunner {
 
         final LocalDateTime startTime1 = LocalDateTime.of(LocalDate.now(), LocalTime.of(14, 00));
         final LocalDateTime endTime1 = LocalDateTime.of(LocalDate.now(), LocalTime.of(16, 30));
-        final Show show2 = Show.builder().showName("show2")
+        final Show show2 = Show.builder().showName("show2 - evening show")
                 .movies(Arrays.asList(movie2))
                 .startTime(startTime1)
                 .endTime(endTime1)

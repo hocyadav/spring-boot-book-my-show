@@ -11,10 +11,10 @@ import java.util.List;
  */
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 @ToString
-public class WeekDay {
-    List<Days> days = new ArrayList<>();//todo test for list of Entity class
+public class EntitySeat {//not working converter test again // TODO: 07-03-2021
+    List<Seat> seats = new ArrayList<>();
 }

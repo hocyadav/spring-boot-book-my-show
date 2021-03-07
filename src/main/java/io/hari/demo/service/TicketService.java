@@ -24,10 +24,21 @@ public class TicketService extends BaseService<Ticket> {
         super(dao);
     }
 
+    /**
+     * Creating ticket
+     * Approach :
+     * 1. get ticket obj : contains show, seats id in string, userid
+     * 2. get lock obj using show id & seat id
+     * 3. check if status is locked then stop coz someone has booked this show's seat
+     * 4. if status is available then change to locked and create ticket object
+     * 5. do above in synchronized block
+     * @param ticket
+     * @return
+     */
     @Override
     public Ticket save(Ticket ticket) {
-        final Ticket fetchedTicket = super.save(ticket);
         synchronized (this) {
+        final Ticket fetchedTicket = super.save(ticket);
             final Long showId = ticket.getShow().getId();
             final String[] split = ticket.getSeatIds().split(",");
             Arrays.stream(split).forEach(System.err::println);
@@ -41,7 +52,7 @@ public class TicketService extends BaseService<Ticket> {
                 final SeatLock afterLock = seatLockDao.save(beforeLock);
                 System.err.println("afterLock = " + afterLock);
             });
-        }
         return fetchedTicket;
+        }
     }
 }

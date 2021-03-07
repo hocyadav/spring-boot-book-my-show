@@ -1,5 +1,6 @@
 package io.hari.demo.entity;
 
+refactorimport com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.Convert;
@@ -24,7 +25,10 @@ import java.util.Map;
 public class Movie extends BaseEntity {
     String movieName;
 
+
+
     //other metadata
+
     Float ratings;
 
     @Convert(converter = MovieAttributeConvertor.class)
@@ -33,6 +37,7 @@ public class Movie extends BaseEntity {
     @Transient
     Map<String, String> attributes = new HashMap<>();
 
+    @JsonIgnore//optional : hide from json web response, coz already above we are showing movie attribute
     public Map<String, String> getAttributes() {
         return movieAttribute.getAttributes();
     }
