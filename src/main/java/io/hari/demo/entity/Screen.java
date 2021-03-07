@@ -23,4 +23,6 @@ public class Screen extends BaseEntity {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)//+ 1 dao method
     List<Show> shows = new ArrayList<>();
+
+    // other metadata
 }

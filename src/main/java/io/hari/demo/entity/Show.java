@@ -3,6 +3,8 @@ package io.hari.demo.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.time.Duration;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,4 +32,17 @@ public class Show extends BaseEntity {
     List<Movie> movies = new ArrayList<>();
 
     //other metadata
+    LocalDateTime startTime; //only LocalTime is enough here , TODO
+    LocalDateTime endTime;
+    Long movieLength;//start - end time
+
+    @Convert(converter = WeekDayConvert.class)
+    WeekDay weekDay;
+
+    @Transient
+    List<Days> days = new ArrayList<>();
+
+    public List<Days> getDays() {
+        return weekDay.getDays();
+    }
 }
