@@ -1,5 +1,6 @@
 package io.hari.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -20,4 +21,9 @@ import javax.persistence.Table;
 public class Seat extends BaseEntity {
     String seatType = "silver";//default value
     //other metadata GOLD, SILVER
+
+    @JsonProperty
+    public Long getSeatId() {
+        return super.getId();
+    }
 }
