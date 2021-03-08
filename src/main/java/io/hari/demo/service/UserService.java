@@ -1,18 +1,16 @@
 package io.hari.demo.service;
 
-import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableMap;
 import io.hari.demo.dao.BaseDao;
 import io.hari.demo.dao.SeatLockDao;
-import io.hari.demo.entity.Seat;
-import io.hari.demo.entity.SeatLock;
-import io.hari.demo.entity.Show;
-import io.hari.demo.entity.User;
+import io.hari.demo.entity.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
@@ -25,6 +23,9 @@ public class UserService extends BaseService<User> {
 
     @Autowired
     SeatLockDao seatLockDao;
+
+    @Autowired
+    ApplicationEventPublisher applicationEventPublisher;
 
     public UserService(BaseDao<User> dao) {
         super(dao);
@@ -39,7 +40,10 @@ public class UserService extends BaseService<User> {
             seatLock.setLockStatus("temp_lock");
             seatLockDao.save(seatLock);
         });
-
+        final Event event = Event.builder().name("event1")
+                .type("type1").params(ImmutableMap.of("showId", showId, "seats", seats))
+                .localDateTime(LocalDateTime.now()).build();
+        applicationEventPublisher.publishEvent(event);
     }
 
     private boolean validSeats(Long showId, List<Seat> seats) {
