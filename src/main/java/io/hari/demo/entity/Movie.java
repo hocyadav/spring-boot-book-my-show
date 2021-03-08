@@ -1,6 +1,6 @@
 package io.hari.demo.entity;
 
-refactorimport com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.Convert;

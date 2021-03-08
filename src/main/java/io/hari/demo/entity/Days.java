@@ -10,5 +10,9 @@ import lombok.Getter;
 public enum Days {
     sun,
     mon,
-    tue;
+    tue,
+    wed,
+    thu,
+    fri,
+    sat;
 }
