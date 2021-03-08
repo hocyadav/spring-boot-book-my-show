@@ -1,12 +1,15 @@
 package io.hari.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 import javax.persistence.*;
-import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @Author Hariom Yadav
@@ -36,13 +39,28 @@ public class Show extends BaseEntity {
     LocalDateTime endTime;
     Long movieLength;//start - end time
 
+    @JsonIgnore
     @Convert(converter = WeekDayConvert.class)
     WeekDay weekDay;//this is simple pojo and inside that also simple pojo list
 
+
     @Transient
     List<Days> days = new ArrayList<>();
-
-    public List<Days> getDays() {
+    public List<Days> getDays() {// in weekday enum we are showing values
         return weekDay.getDays();
+    }
+
+    @JsonProperty(value = "seat_types")
+    public Map<String, List<Long>> getSeatsTypes() {
+        final Map<String, List<Long>> collect = seats.stream().collect(Collectors.groupingBy(
+                i -> i.getSeatType(),
+                Collectors.mapping(i -> i.getSeatId(), Collectors.toList())
+        ));
+        return collect;
+    }
+
+    @JsonProperty
+    public List<Movie> getMovieNames() {
+        return movies;
     }
 }
