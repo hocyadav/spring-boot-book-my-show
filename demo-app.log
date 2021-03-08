@@ -5474,3 +5474,1174 @@ java.lang.IllegalArgumentException: Invalid character found in the request targe
 2021-03-07 20:46:26.466  INFO 11308 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 3.684 seconds (JVM running for 4.256)
 2021-03-07 20:46:26.722  INFO 11308 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
 2021-03-07 20:46:26.725  INFO 11308 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:11:55.949  INFO 2444 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 2444 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:11:55.951  INFO 2444 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:11:56.669  INFO 2444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:11:56.761  INFO 2444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:11:57.376  INFO 2444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:11:57.386  INFO 2444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:11:57.387  INFO 2444 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:11:57.549  INFO 2444 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:11:57.549  INFO 2444 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1554 ms
+2021-03-07 22:11:57.605  INFO 2444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:11:57.772  INFO 2444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:11:57.779  INFO 2444 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:11:57.989  INFO 2444 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:11:58.084  INFO 2444 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:11:58.298  INFO 2444 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:11:58.462  INFO 2444 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:11:58.677  WARN 2444 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:11:58.683  WARN 2444 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:11:59.463  INFO 2444 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:11:59.489  INFO 2444 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:12:00.148  WARN 2444 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:12:00.466  INFO 2444 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:12:01.227  INFO 2444 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:12:01.249  INFO 2444 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:12:01.251  INFO 2444 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:12:01.256  INFO 2444 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:12:01.257  INFO 2444 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:12:01.258  INFO 2444 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:12:01.259  INFO 2444 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:12:01.259  INFO 2444 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@521a506c
+2021-03-07 22:12:01.365  INFO 2444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:12:01.366  INFO 2444 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:12:01.368  INFO 2444 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:12:01.383  INFO 2444 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 5.919 seconds (JVM running for 6.812)
+2021-03-07 22:12:02.081  INFO 2444 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:12:02.085  INFO 2444 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:20:44.579  INFO 10820 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 10820 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:20:44.581  INFO 10820 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:20:45.191  INFO 10820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:20:45.253  INFO 10820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:20:45.727  INFO 10820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:20:45.733  INFO 10820 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:20:45.734  INFO 10820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:20:45.810  INFO 10820 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:20:45.811  INFO 10820 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1178 ms
+2021-03-07 22:20:45.901  INFO 10820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:20:46.079  INFO 10820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:20:46.083  INFO 10820 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:20:46.194  INFO 10820 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:20:46.225  INFO 10820 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:20:46.303  INFO 10820 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:20:46.375  INFO 10820 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:20:46.510  WARN 10820 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:20:46.514  WARN 10820 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:20:46.903  INFO 10820 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:20:46.911  INFO 10820 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:20:47.440  WARN 10820 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:20:47.698  INFO 10820 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:20:48.053  INFO 10820 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:20:48.061  INFO 10820 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:20:48.061  INFO 10820 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:20:48.061  INFO 10820 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:20:48.062  INFO 10820 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:20:48.062  INFO 10820 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:20:48.062  INFO 10820 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:20:48.062  INFO 10820 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@63b4b9c6
+2021-03-07 22:20:48.267  INFO 10820 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:20:48.268  INFO 10820 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:20:48.268  INFO 10820 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:20:48.275  INFO 10820 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.039 seconds (JVM running for 4.668)
+2021-03-07 22:20:48.615  INFO 10820 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:20:48.617  INFO 10820 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:21:46.036  INFO 9580 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 9580 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:21:46.038  INFO 9580 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:21:46.749  INFO 9580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:21:46.826  INFO 9580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:21:47.399  INFO 9580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:21:47.417  INFO 9580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:21:47.418  INFO 9580 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:21:47.634  INFO 9580 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:21:47.634  INFO 9580 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1534 ms
+2021-03-07 22:21:47.694  INFO 9580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:21:47.766  INFO 9580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:21:47.770  INFO 9580 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:21:47.938  INFO 9580 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:21:47.966  INFO 9580 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:21:48.041  INFO 9580 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:21:48.117  INFO 9580 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:21:48.291  WARN 9580 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:21:48.306  WARN 9580 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:21:48.775  INFO 9580 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:21:48.782  INFO 9580 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:21:49.329  WARN 9580 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:21:49.617  INFO 9580 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:21:49.989  INFO 9580 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:21:49.997  INFO 9580 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:21:49.997  INFO 9580 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:21:49.998  INFO 9580 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:21:49.999  INFO 9580 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:21:49.999  INFO 9580 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:21:49.999  INFO 9580 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:21:49.999  INFO 9580 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5bd3ca3c
+2021-03-07 22:21:50.045  INFO 9580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:21:50.046  INFO 9580 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:21:50.047  INFO 9580 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:21:50.054  INFO 9580 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.73 seconds (JVM running for 5.95)
+2021-03-07 22:21:50.484  INFO 9580 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:21:50.486  INFO 9580 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:22:43.870  INFO 10532 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 10532 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:22:43.873  INFO 10532 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:22:44.727  INFO 10532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:22:44.801  INFO 10532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:22:45.460  INFO 10532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:22:45.482  INFO 10532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:22:45.483  INFO 10532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:22:45.611  INFO 10532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:22:45.611  INFO 10532 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1670 ms
+2021-03-07 22:22:45.658  INFO 10532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:22:45.817  INFO 10532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:22:45.821  INFO 10532 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:22:45.941  INFO 10532 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:22:45.970  INFO 10532 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:22:46.046  INFO 10532 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:22:46.121  INFO 10532 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:22:46.254  WARN 10532 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:22:46.259  WARN 10532 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:22:46.663  INFO 10532 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:22:46.670  INFO 10532 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:22:47.160  WARN 10532 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:22:47.439  INFO 10532 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:22:47.764  INFO 10532 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:22:47.776  INFO 10532 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:22:47.776  INFO 10532 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:22:47.777  INFO 10532 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:22:47.778  INFO 10532 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:22:47.778  INFO 10532 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:22:47.779  INFO 10532 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:22:47.779  INFO 10532 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4eb1943b
+2021-03-07 22:22:48.003  INFO 10532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:22:48.004  INFO 10532 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:22:48.004  INFO 10532 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:22:48.013  INFO 10532 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.53 seconds (JVM running for 5.164)
+2021-03-07 22:22:48.333  INFO 10532 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:22:48.335  INFO 10532 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:24:46.167  INFO 8924 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 8924 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:24:46.169  INFO 8924 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:24:47.163  INFO 8924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:24:47.366  INFO 8924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:24:48.130  INFO 8924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:24:48.144  INFO 8924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:24:48.145  INFO 8924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:24:48.278  INFO 8924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:24:48.278  INFO 8924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2069 ms
+2021-03-07 22:24:48.344  INFO 8924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:24:48.531  INFO 8924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:24:48.535  INFO 8924 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:24:48.658  INFO 8924 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:24:48.689  INFO 8924 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:24:48.769  INFO 8924 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:24:48.845  INFO 8924 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:24:48.987  WARN 8924 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:24:48.991  WARN 8924 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:24:49.417  INFO 8924 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:24:49.424  INFO 8924 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:24:49.970  WARN 8924 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:24:50.307  INFO 8924 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:24:50.695  INFO 8924 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:24:50.703  INFO 8924 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:24:50.703  INFO 8924 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:24:50.704  INFO 8924 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:24:50.705  INFO 8924 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:24:50.705  INFO 8924 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:24:50.705  INFO 8924 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:24:50.705  INFO 8924 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1b1ea1d9
+2021-03-07 22:24:50.911  INFO 8924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:24:50.912  INFO 8924 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:24:50.912  INFO 8924 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:24:50.920  INFO 8924 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 5.115 seconds (JVM running for 5.753)
+2021-03-07 22:24:51.205  INFO 8924 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:24:51.208  INFO 8924 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:31:53.894  INFO 12144 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 12144 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:31:53.896  INFO 12144 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:31:54.564  INFO 12144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:31:54.631  INFO 12144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:31:55.299  INFO 12144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:31:55.308  INFO 12144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:31:55.308  INFO 12144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:31:55.427  INFO 12144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:31:55.428  INFO 12144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1483 ms
+2021-03-07 22:31:55.480  INFO 12144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:31:55.619  INFO 12144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:31:55.625  INFO 12144 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:31:55.755  INFO 12144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:31:55.786  INFO 12144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:31:55.862  INFO 12144 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:31:55.937  INFO 12144 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:31:56.142  WARN 12144 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:31:56.155  WARN 12144 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:31:56.582  INFO 12144 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:31:56.589  INFO 12144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:31:57.190  WARN 12144 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:31:57.457  INFO 12144 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:31:57.827  INFO 12144 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:31:57.835  INFO 12144 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:31:57.835  INFO 12144 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:31:57.835  INFO 12144 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:31:57.836  INFO 12144 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:31:57.836  INFO 12144 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:31:57.836  INFO 12144 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:31:57.836  INFO 12144 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@55d99dc3
+2021-03-07 22:31:58.099  INFO 12144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:31:58.100  INFO 12144 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:31:58.100  INFO 12144 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:31:58.110  INFO 12144 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.603 seconds (JVM running for 5.236)
+2021-03-07 22:31:58.386  INFO 12144 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:31:58.390  INFO 12144 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:32:56.168  INFO 7304 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 7304 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:32:56.170  INFO 7304 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:32:56.771  INFO 7304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:32:56.831  INFO 7304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:32:57.289  INFO 7304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:32:57.297  INFO 7304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:32:57.297  INFO 7304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:32:57.465  INFO 7304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:32:57.466  INFO 7304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1247 ms
+2021-03-07 22:32:57.537  INFO 7304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:32:57.665  INFO 7304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:32:57.669  INFO 7304 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:32:57.835  INFO 7304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:32:57.885  INFO 7304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:32:57.954  INFO 7304 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:32:58.022  INFO 7304 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:32:58.156  WARN 7304 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:32:58.160  WARN 7304 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:32:58.594  INFO 7304 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:32:58.601  INFO 7304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:32:59.142  WARN 7304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:32:59.448  INFO 7304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:32:59.798  INFO 7304 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:32:59.805  INFO 7304 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:32:59.805  INFO 7304 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:32:59.805  INFO 7304 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:32:59.806  INFO 7304 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:32:59.806  INFO 7304 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:32:59.806  INFO 7304 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:32:59.806  INFO 7304 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@669c2b07
+2021-03-07 22:33:00.013  INFO 7304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:33:00.014  INFO 7304 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:33:00.014  INFO 7304 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:33:00.021  INFO 7304 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.221 seconds (JVM running for 4.793)
+2021-03-07 22:33:00.295  INFO 7304 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:33:00.303  INFO 7304 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:33:10.886  INFO 7476 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 7476 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:33:10.889  INFO 7476 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:33:11.451  INFO 7476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:33:11.511  INFO 7476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:33:12.011  INFO 7476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:33:12.018  INFO 7476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:33:12.018  INFO 7476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:33:12.135  INFO 7476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:33:12.135  INFO 7476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1200 ms
+2021-03-07 22:33:12.178  INFO 7476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:33:12.303  INFO 7476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:33:12.307  INFO 7476 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:33:12.455  INFO 7476 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:33:12.488  INFO 7476 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:33:12.560  INFO 7476 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:33:12.635  INFO 7476 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:33:12.763  WARN 7476 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:33:12.767  WARN 7476 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:33:13.259  INFO 7476 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:33:13.266  INFO 7476 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:33:13.696  WARN 7476 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:33:13.953  INFO 7476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:33:14.269  INFO 7476 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:33:14.276  INFO 7476 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:33:14.277  INFO 7476 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:33:14.277  INFO 7476 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:33:14.278  INFO 7476 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:33:14.278  INFO 7476 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:33:14.278  INFO 7476 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:33:14.278  INFO 7476 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1b1ea1d9
+2021-03-07 22:33:14.482  INFO 7476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:33:14.484  INFO 7476 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:33:14.484  INFO 7476 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:33:14.491  INFO 7476 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 3.952 seconds (JVM running for 4.524)
+2021-03-07 22:33:14.792  INFO 7476 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:33:14.795  INFO 7476 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:35:32.802  INFO 10828 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 10828 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:35:32.805  INFO 10828 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:35:33.509  INFO 10828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:35:33.582  INFO 10828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:35:33.989  INFO 10828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:35:33.996  INFO 10828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:35:33.997  INFO 10828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:35:34.097  INFO 10828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:35:34.097  INFO 10828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1246 ms
+2021-03-07 22:35:34.140  INFO 10828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:35:34.326  INFO 10828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:35:34.331  INFO 10828 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:35:34.477  INFO 10828 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:35:34.506  INFO 10828 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:35:34.580  INFO 10828 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:35:34.660  INFO 10828 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:35:34.832  WARN 10828 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:35:34.837  WARN 10828 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:35:35.410  INFO 10828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:35:35.417  INFO 10828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:35:35.876  WARN 10828 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:35:36.129  INFO 10828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:35:36.490  INFO 10828 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:35:36.503  INFO 10828 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:35:36.503  INFO 10828 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:35:36.503  INFO 10828 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:35:36.505  INFO 10828 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:35:36.505  INFO 10828 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:35:36.505  INFO 10828 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:35:36.505  INFO 10828 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1b1ea1d9
+2021-03-07 22:35:36.722  INFO 10828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:35:36.723  INFO 10828 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:35:36.724  INFO 10828 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:35:36.731  INFO 10828 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.282 seconds (JVM running for 5.004)
+2021-03-07 22:35:37.032  INFO 10828 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:35:37.036  INFO 10828 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:37:36.223  INFO 9412 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 9412 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:37:36.227  INFO 9412 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:37:36.984  INFO 9412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:37:37.060  INFO 9412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:37:37.785  INFO 9412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:37:37.793  INFO 9412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:37:37.794  INFO 9412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:37:37.886  INFO 9412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:37:37.886  INFO 9412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1586 ms
+2021-03-07 22:37:37.931  INFO 9412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:37:38.057  INFO 9412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:37:38.061  INFO 9412 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:37:38.210  INFO 9412 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:37:38.254  INFO 9412 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:37:38.579  INFO 9412 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:37:38.733  INFO 9412 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:37:38.964  WARN 9412 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:37:38.969  WARN 9412 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:37:39.444  INFO 9412 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:37:39.451  INFO 9412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:37:39.953  WARN 9412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:37:40.227  INFO 9412 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:37:40.614  INFO 9412 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:37:40.621  INFO 9412 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:37:40.622  INFO 9412 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:37:40.622  INFO 9412 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:37:40.623  INFO 9412 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:37:40.623  INFO 9412 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:37:40.623  INFO 9412 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:37:40.623  INFO 9412 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@579f3c8e
+2021-03-07 22:37:40.823  INFO 9412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:37:40.824  INFO 9412 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:37:40.824  INFO 9412 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:37:40.845  INFO 9412 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.97 seconds (JVM running for 5.89)
+2021-03-07 22:37:41.227  INFO 9412 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:37:41.230  INFO 9412 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:37:49.191  INFO 5892 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 5892 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:37:49.193  INFO 5892 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:37:49.784  INFO 5892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:37:49.843  INFO 5892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:37:50.389  INFO 5892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:37:50.395  INFO 5892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:37:50.395  INFO 5892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:37:50.470  INFO 5892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:37:50.470  INFO 5892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1229 ms
+2021-03-07 22:37:50.515  INFO 5892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:37:50.638  INFO 5892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:37:50.642  INFO 5892 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:37:50.764  INFO 5892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:37:50.792  INFO 5892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:37:50.867  INFO 5892 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:37:50.945  INFO 5892 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:37:51.069  WARN 5892 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:37:51.074  WARN 5892 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:37:51.588  INFO 5892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:37:51.595  INFO 5892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:37:52.215  WARN 5892 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:37:52.486  INFO 5892 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:37:52.863  INFO 5892 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:37:52.873  INFO 5892 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:37:52.874  INFO 5892 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:37:52.875  INFO 5892 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:37:52.876  INFO 5892 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:37:52.876  INFO 5892 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:37:52.876  INFO 5892 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:37:52.876  INFO 5892 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@40017e98
+2021-03-07 22:37:52.897  INFO 5892 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 22:37:53.101  INFO 5892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:37:53.102  INFO 5892 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:37:53.102  INFO 5892 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:37:53.111  INFO 5892 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.262 seconds (JVM running for 4.799)
+2021-03-07 22:37:53.369  INFO 5892 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:37:53.372  INFO 5892 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:38:04.431  INFO 5892 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-03-07 22:38:04.598  INFO 5892 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-03-07 22:38:04.599  INFO 5892 --- [SpringContextShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2021-03-07 22:38:04.599  INFO 5892 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2021-03-07 22:38:04.599  INFO 5892 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2021-03-07 22:38:04.600  INFO 5892 --- [SpringContextShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2021-03-07 22:38:04.601  INFO 5892 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:38:04.604  INFO 5892 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:38:04.604  INFO 5892 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-07 22:38:04.609  INFO 5892 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-07 22:38:04.612  INFO 5892 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-07 22:40:37.922  INFO 14260 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 14260 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:40:37.924  INFO 14260 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:40:38.658  INFO 14260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:40:38.720  INFO 14260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:40:39.238  INFO 14260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:40:39.245  INFO 14260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:40:39.245  INFO 14260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:40:39.372  INFO 14260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:40:39.372  INFO 14260 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1403 ms
+2021-03-07 22:40:39.419  INFO 14260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:40:39.491  INFO 14260 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:40:39.495  INFO 14260 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:40:39.658  INFO 14260 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:40:39.686  INFO 14260 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:40:39.763  INFO 14260 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:40:39.832  INFO 14260 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:40:39.967  WARN 14260 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:40:39.972  WARN 14260 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:40:40.456  INFO 14260 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:40:40.463  INFO 14260 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:40:40.949  WARN 14260 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:40:41.232  INFO 14260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:40:41.634  INFO 14260 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:40:41.641  INFO 14260 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:40:41.654  INFO 14260 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:40:41.656  INFO 14260 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:40:41.657  INFO 14260 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:40:41.657  INFO 14260 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:40:41.657  INFO 14260 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:40:41.657  INFO 14260 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3fd5d679
+2021-03-07 22:40:41.684  INFO 14260 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 22:40:41.752  INFO 14260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:40:41.753  INFO 14260 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:40:41.754  INFO 14260 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:40:41.769  INFO 14260 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.211 seconds (JVM running for 4.783)
+2021-03-07 22:40:42.200  INFO 14260 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:40:42.202  INFO 14260 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:42:51.677  INFO 8552 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 8552 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:42:51.679  INFO 8552 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:42:52.265  INFO 8552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:42:52.326  INFO 8552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:42:52.723  INFO 8552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:42:52.737  INFO 8552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:42:52.739  INFO 8552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:42:52.858  INFO 8552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:42:52.858  INFO 8552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1140 ms
+2021-03-07 22:42:52.902  INFO 8552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:42:53.075  INFO 8552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:42:53.079  INFO 8552 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:42:53.194  INFO 8552 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:42:53.222  INFO 8552 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:42:53.298  INFO 8552 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:42:53.373  INFO 8552 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:42:53.553  WARN 8552 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:42:53.557  WARN 8552 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:42:53.999  INFO 8552 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:42:54.006  INFO 8552 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:42:54.522  WARN 8552 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:42:54.795  INFO 8552 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:42:55.144  INFO 8552 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:42:55.164  INFO 8552 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:42:55.165  INFO 8552 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:42:55.166  INFO 8552 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:42:55.167  INFO 8552 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:42:55.168  INFO 8552 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:42:55.168  INFO 8552 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:42:55.169  INFO 8552 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@428eb3d5
+2021-03-07 22:42:55.192  INFO 8552 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 22:42:55.400  INFO 8552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:42:55.402  INFO 8552 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:42:55.402  INFO 8552 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:42:55.409  INFO 8552 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.081 seconds (JVM running for 4.636)
+2021-03-07 22:42:55.674  INFO 8552 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:42:55.676  INFO 8552 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:46:17.368  INFO 12484 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 12484 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:46:17.370  INFO 12484 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:46:17.946  INFO 12484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:46:18.011  INFO 12484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:46:18.519  INFO 12484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:46:18.534  INFO 12484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:46:18.535  INFO 12484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:46:18.644  INFO 12484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:46:18.644  INFO 12484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1230 ms
+2021-03-07 22:46:18.740  INFO 12484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:46:18.915  INFO 12484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:46:18.920  INFO 12484 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:46:19.049  INFO 12484 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:46:19.094  INFO 12484 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:46:19.218  INFO 12484 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:46:19.299  INFO 12484 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:46:19.489  WARN 12484 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:46:19.492  WARN 12484 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:46:20.064  INFO 12484 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:46:20.072  INFO 12484 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:46:20.591  WARN 12484 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:46:20.853  INFO 12484 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:46:21.174  INFO 12484 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:46:21.181  INFO 12484 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:46:21.182  INFO 12484 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:46:21.182  INFO 12484 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:46:21.183  INFO 12484 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:46:21.183  INFO 12484 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:46:21.183  INFO 12484 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:46:21.183  INFO 12484 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7c4ca87c
+2021-03-07 22:46:21.197  INFO 12484 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 22:46:21.403  INFO 12484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:46:21.404  INFO 12484 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:46:21.404  INFO 12484 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:46:21.414  INFO 12484 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.389 seconds (JVM running for 4.947)
+2021-03-07 22:46:21.777  INFO 12484 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:46:21.779  INFO 12484 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:46:43.447  INFO 8760 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 8760 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:46:43.449  INFO 8760 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:46:44.030  INFO 8760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:46:44.089  INFO 8760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:46:44.647  INFO 8760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:46:44.653  INFO 8760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:46:44.654  INFO 8760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:46:44.745  INFO 8760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:46:44.745  INFO 8760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1251 ms
+2021-03-07 22:46:44.791  INFO 8760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:46:44.915  INFO 8760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:46:44.919  INFO 8760 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:46:45.070  INFO 8760 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:46:45.097  INFO 8760 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:46:45.175  INFO 8760 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:46:45.244  INFO 8760 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:46:45.452  WARN 8760 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:46:45.458  WARN 8760 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:46:45.983  INFO 8760 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:46:45.991  INFO 8760 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:46:46.486  WARN 8760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:46:46.822  INFO 8760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:46:47.168  INFO 8760 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:46:47.175  INFO 8760 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:46:47.176  INFO 8760 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:46:47.176  INFO 8760 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:46:47.177  INFO 8760 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:46:47.177  INFO 8760 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:46:47.177  INFO 8760 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:46:47.178  INFO 8760 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5ddd84d2
+2021-03-07 22:46:47.191  INFO 8760 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 22:46:47.361  INFO 8760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:46:47.362  INFO 8760 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:46:47.362  INFO 8760 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:46:47.369  INFO 8760 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.271 seconds (JVM running for 4.931)
+2021-03-07 22:46:47.708  INFO 8760 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:46:47.712  INFO 8760 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:48:53.156  INFO 8120 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 8120 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:48:53.160  INFO 8120 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:48:53.916  INFO 8120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:48:53.990  INFO 8120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:48:54.682  INFO 8120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:48:54.692  INFO 8120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:48:54.692  INFO 8120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:48:54.819  INFO 8120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:48:54.820  INFO 8120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1560 ms
+2021-03-07 22:48:54.905  INFO 8120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:48:55.095  INFO 8120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:48:55.099  INFO 8120 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:48:55.320  INFO 8120 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:48:55.355  INFO 8120 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:48:55.440  INFO 8120 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:48:55.522  INFO 8120 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:48:55.693  WARN 8120 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:48:55.697  WARN 8120 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:48:56.156  INFO 8120 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:48:56.166  INFO 8120 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:48:56.728  WARN 8120 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:48:56.998  INFO 8120 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:48:57.318  INFO 8120 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:48:57.325  INFO 8120 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:48:57.325  INFO 8120 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:48:57.326  INFO 8120 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:48:57.326  INFO 8120 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:48:57.326  INFO 8120 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:48:57.326  INFO 8120 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:48:57.326  INFO 8120 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@28519bfb
+2021-03-07 22:48:57.362  INFO 8120 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 22:48:57.606  INFO 8120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:48:57.606  INFO 8120 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:48:57.606  INFO 8120 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:48:57.614  INFO 8120 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.889 seconds (JVM running for 5.632)
+2021-03-07 22:48:57.932  INFO 8120 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:48:57.934  INFO 8120 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:51:32.924  INFO 10904 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 10904 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:51:32.929  INFO 10904 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:51:33.685  INFO 10904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:51:33.754  INFO 10904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:51:34.240  INFO 10904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:51:34.247  INFO 10904 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:51:34.247  INFO 10904 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:51:34.337  INFO 10904 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:51:34.337  INFO 10904 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1325 ms
+2021-03-07 22:51:34.381  INFO 10904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:51:34.504  INFO 10904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:51:34.509  INFO 10904 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:51:34.660  INFO 10904 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:51:34.689  INFO 10904 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:51:34.769  INFO 10904 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:51:34.841  INFO 10904 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:51:34.965  WARN 10904 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:51:34.969  WARN 10904 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:51:35.436  INFO 10904 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:51:35.443  INFO 10904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:51:35.899  WARN 10904 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:51:36.334  INFO 10904 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:51:36.763  INFO 10904 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:51:36.771  INFO 10904 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:51:36.771  INFO 10904 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:51:36.772  INFO 10904 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:51:36.773  INFO 10904 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:51:36.773  INFO 10904 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:51:36.773  INFO 10904 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:51:36.773  INFO 10904 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3fd5d679
+2021-03-07 22:51:36.789  INFO 10904 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 22:51:36.988  INFO 10904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:51:36.989  INFO 10904 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:51:36.989  INFO 10904 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:51:36.997  INFO 10904 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.648 seconds (JVM running for 5.24)
+2021-03-07 22:51:37.292  INFO 10904 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:51:37.295  INFO 10904 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:52:46.185  INFO 10904 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-07 22:52:46.186  INFO 10904 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-07 22:52:46.189  INFO 10904 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-03-07 22:53:04.180  INFO 2472 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 2472 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:53:04.183  INFO 2472 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:53:05.065  INFO 2472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:53:05.166  INFO 2472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:53:05.725  INFO 2472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:53:05.731  INFO 2472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:53:05.732  INFO 2472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:53:05.822  INFO 2472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:53:05.822  INFO 2472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1589 ms
+2021-03-07 22:53:05.868  INFO 2472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:53:05.995  INFO 2472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:53:06.000  INFO 2472 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:53:06.216  INFO 2472 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:53:06.250  INFO 2472 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:53:06.363  INFO 2472 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:53:06.505  INFO 2472 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:53:06.672  WARN 2472 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:53:06.676  WARN 2472 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:53:07.237  INFO 2472 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:53:07.249  INFO 2472 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:53:07.846  WARN 2472 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:53:08.263  INFO 2472 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:53:08.628  INFO 2472 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:53:08.646  INFO 2472 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:53:08.646  INFO 2472 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:53:08.647  INFO 2472 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:53:08.647  INFO 2472 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:53:08.647  INFO 2472 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:53:08.648  INFO 2472 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:53:08.648  INFO 2472 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7aa15a80
+2021-03-07 22:53:08.663  INFO 2472 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 22:53:08.881  INFO 2472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:53:08.883  INFO 2472 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:53:08.883  INFO 2472 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:53:08.897  INFO 2472 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 5.158 seconds (JVM running for 5.837)
+2021-03-07 22:53:09.241  INFO 2472 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:53:09.244  INFO 2472 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 22:58:44.455  INFO 8924 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 8924 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 22:58:44.457  INFO 8924 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 22:58:45.196  INFO 8924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 22:58:45.273  INFO 8924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 8 JPA repository interfaces.
+2021-03-07 22:58:45.839  INFO 8924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 22:58:45.845  INFO 8924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 22:58:45.845  INFO 8924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 22:58:45.919  INFO 8924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 22:58:45.919  INFO 8924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1418 ms
+2021-03-07 22:58:46.009  INFO 8924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 22:58:46.092  INFO 8924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 22:58:46.097  INFO 8924 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 22:58:46.260  INFO 8924 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 22:58:46.289  INFO 8924 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 22:58:46.365  INFO 8924 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 22:58:46.434  INFO 8924 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 22:58:46.600  WARN 8924 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:58:46.604  WARN 8924 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 22:58:46.976  INFO 8924 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 22:58:46.985  INFO 8924 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 22:58:47.499  WARN 8924 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 22:58:47.801  INFO 8924 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 22:58:48.204  INFO 8924 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 22:58:48.211  INFO 8924 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 22:58:48.212  INFO 8924 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 22:58:48.212  INFO 8924 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 22:58:48.213  INFO 8924 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 22:58:48.213  INFO 8924 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 22:58:48.213  INFO 8924 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 22:58:48.213  INFO 8924 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1dbeedff
+2021-03-07 22:58:48.226  INFO 8924 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 22:58:48.265  INFO 8924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 22:58:48.266  INFO 8924 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 22:58:48.266  INFO 8924 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 22:58:48.282  INFO 8924 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.17 seconds (JVM running for 4.727)
+2021-03-07 22:58:48.685  INFO 8924 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 22:58:48.688  INFO 8924 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 23:01:14.848  INFO 10204 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 10204 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 23:01:14.850  INFO 10204 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 23:01:15.559  INFO 10204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 23:01:15.681  INFO 10204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 8 JPA repository interfaces.
+2021-03-07 23:01:16.281  INFO 10204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 23:01:16.290  INFO 10204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 23:01:16.291  INFO 10204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 23:01:16.419  INFO 10204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 23:01:16.419  INFO 10204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1524 ms
+2021-03-07 23:01:16.467  INFO 10204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 23:01:16.544  INFO 10204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 23:01:16.548  INFO 10204 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 23:01:16.722  INFO 10204 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 23:01:16.754  INFO 10204 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 23:01:16.831  INFO 10204 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 23:01:16.950  INFO 10204 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 23:01:17.092  WARN 10204 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:01:17.096  WARN 10204 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:01:17.709  INFO 10204 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 23:01:17.716  INFO 10204 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 23:01:18.188  WARN 10204 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 23:01:18.451  INFO 10204 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 23:01:18.761  INFO 10204 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 23:01:18.782  INFO 10204 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 23:01:18.783  INFO 10204 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 23:01:18.784  INFO 10204 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 23:01:18.785  INFO 10204 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 23:01:18.786  INFO 10204 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 23:01:18.786  INFO 10204 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 23:01:18.786  INFO 10204 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3cead673
+2021-03-07 23:01:18.810  INFO 10204 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 23:01:18.853  INFO 10204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 23:01:18.854  INFO 10204 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 23:01:18.854  INFO 10204 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 23:01:18.863  INFO 10204 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.481 seconds (JVM running for 5.133)
+2021-03-07 23:01:19.340  INFO 10204 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1, version=1, updateTime=2021-03-07T23:01:19.124), seatType=gold), Seat(super=BaseEntity(id=2, version=1, updateTime=2021-03-07T23:01:19.124), seatType=silver), Seat(super=BaseEntity(id=3, version=1, updateTime=2021-03-07T23:01:19.124), seatType=gold)]
+2021-03-07 23:01:19.344  INFO 10204 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1, version=1, updateTime=2021-03-07T23:01:19.143), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2, version=1, updateTime=2021-03-07T23:01:19.144), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3, version=1, updateTime=2021-03-07T23:01:19.145), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 23:02:30.064  INFO 8656 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 8656 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 23:02:30.066  INFO 8656 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 23:02:30.645  INFO 8656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 23:02:30.708  INFO 8656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 8 JPA repository interfaces.
+2021-03-07 23:02:31.134  INFO 8656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 23:02:31.152  INFO 8656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 23:02:31.152  INFO 8656 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 23:02:31.325  INFO 8656 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 23:02:31.325  INFO 8656 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1214 ms
+2021-03-07 23:02:31.373  INFO 8656 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 23:02:31.445  INFO 8656 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 23:02:31.449  INFO 8656 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 23:02:31.607  INFO 8656 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 23:02:31.654  INFO 8656 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 23:02:31.729  INFO 8656 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 23:02:31.799  INFO 8656 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 23:02:31.931  WARN 8656 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:02:31.935  WARN 8656 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:02:32.418  INFO 8656 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 23:02:32.430  INFO 8656 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 23:02:33.115  WARN 8656 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 23:02:33.767  INFO 8656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 23:02:34.195  INFO 8656 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 23:02:34.202  INFO 8656 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 23:02:34.203  INFO 8656 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 23:02:34.203  INFO 8656 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 23:02:34.204  INFO 8656 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 23:02:34.204  INFO 8656 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 23:02:34.204  INFO 8656 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 23:02:34.204  INFO 8656 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@24018c8b
+2021-03-07 23:02:34.217  INFO 8656 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 23:02:34.288  INFO 8656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 23:02:34.290  INFO 8656 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 23:02:34.290  INFO 8656 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 23:02:34.310  INFO 8656 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.591 seconds (JVM running for 5.143)
+2021-03-07 23:02:35.176  INFO 8656 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1, version=0, updateTime=null), seatType=gold), Seat(super=BaseEntity(id=2, version=0, updateTime=null), seatType=silver), Seat(super=BaseEntity(id=3, version=0, updateTime=null), seatType=gold)]
+2021-03-07 23:02:35.181  INFO 8656 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1, version=0, updateTime=null), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2, version=0, updateTime=null), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3, version=0, updateTime=null), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 23:03:07.520  INFO 2952 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 2952 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 23:03:07.522  INFO 2952 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 23:03:08.106  INFO 2952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 23:03:08.165  INFO 2952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 8 JPA repository interfaces.
+2021-03-07 23:03:08.657  INFO 2952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 23:03:08.663  INFO 2952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 23:03:08.664  INFO 2952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 23:03:08.751  INFO 2952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 23:03:08.752  INFO 2952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1187 ms
+2021-03-07 23:03:08.805  INFO 2952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 23:03:08.926  INFO 2952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 23:03:08.930  INFO 2952 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 23:03:09.085  INFO 2952 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 23:03:09.133  INFO 2952 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 23:03:09.208  INFO 2952 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 23:03:09.279  INFO 2952 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 23:03:09.417  WARN 2952 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:03:09.420  WARN 2952 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:03:09.947  INFO 2952 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 23:03:09.954  INFO 2952 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 23:03:10.466  WARN 2952 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 23:03:10.805  INFO 2952 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 23:03:11.338  INFO 2952 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 23:03:11.345  INFO 2952 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 23:03:11.345  INFO 2952 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 23:03:11.345  INFO 2952 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 23:03:11.346  INFO 2952 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 23:03:11.346  INFO 2952 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 23:03:11.347  INFO 2952 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 23:03:11.347  INFO 2952 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@341ccfd1
+2021-03-07 23:03:11.360  INFO 2952 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 23:03:11.562  INFO 2952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 23:03:11.563  INFO 2952 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 23:03:11.563  INFO 2952 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 23:03:11.571  INFO 2952 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.385 seconds (JVM running for 4.926)
+2021-03-07 23:03:11.875  INFO 2952 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1, version=0, updateTime=2021-03-07T23:03:11.710), seatType=gold), Seat(super=BaseEntity(id=2, version=0, updateTime=2021-03-07T23:03:11.711), seatType=silver), Seat(super=BaseEntity(id=3, version=0, updateTime=2021-03-07T23:03:11.711), seatType=gold)]
+2021-03-07 23:03:11.878  INFO 2952 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1, version=0, updateTime=2021-03-07T23:03:11.732), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2, version=0, updateTime=2021-03-07T23:03:11.732), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3, version=0, updateTime=2021-03-07T23:03:11.734), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 23:18:08.217  INFO 148 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 148 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 23:18:08.220  INFO 148 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 23:18:08.839  INFO 148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 23:18:08.917  INFO 148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 8 JPA repository interfaces.
+2021-03-07 23:18:09.474  INFO 148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 23:18:09.481  INFO 148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 23:18:09.481  INFO 148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 23:18:09.564  INFO 148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 23:18:09.565  INFO 148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1296 ms
+2021-03-07 23:18:09.614  INFO 148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 23:18:09.745  INFO 148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 23:18:09.750  INFO 148 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 23:18:09.866  INFO 148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 23:18:09.898  INFO 148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 23:18:09.977  INFO 148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 23:18:10.091  INFO 148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 23:18:10.281  WARN 148 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:18:10.285  WARN 148 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:18:10.719  INFO 148 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 23:18:10.725  INFO 148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 23:18:11.239  WARN 148 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 23:18:11.549  INFO 148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 23:18:11.926  INFO 148 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 23:18:11.934  INFO 148 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 23:18:11.934  INFO 148 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 23:18:11.935  INFO 148 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 23:18:11.935  INFO 148 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 23:18:11.935  INFO 148 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 23:18:11.935  INFO 148 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 23:18:11.936  INFO 148 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7aa15a80
+2021-03-07 23:18:11.950  INFO 148 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 23:18:12.150  INFO 148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 23:18:12.151  INFO 148 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 23:18:12.151  INFO 148 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 23:18:12.159  INFO 148 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.344 seconds (JVM running for 5.102)
+2021-03-07 23:18:12.454  INFO 148 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 23:18:12.460  INFO 148 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 23:18:21.932  INFO 148 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-07 23:18:21.933  INFO 148 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-07 23:18:21.935  INFO 148 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-07 23:24:18.155  INFO 11548 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 11548 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 23:24:18.157  INFO 11548 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 23:24:18.806  INFO 11548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 23:24:18.869  INFO 11548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 8 JPA repository interfaces.
+2021-03-07 23:24:19.363  INFO 11548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 23:24:19.369  INFO 11548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 23:24:19.369  INFO 11548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 23:24:19.439  INFO 11548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 23:24:19.439  INFO 11548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1234 ms
+2021-03-07 23:24:19.485  INFO 11548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 23:24:19.557  INFO 11548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 23:24:19.561  INFO 11548 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 23:24:19.736  INFO 11548 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 23:24:19.765  INFO 11548 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 23:24:19.839  INFO 11548 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 23:24:19.909  INFO 11548 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 23:24:20.089  WARN 11548 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:24:20.093  WARN 11548 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:24:20.579  INFO 11548 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 23:24:20.585  INFO 11548 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 23:24:21.114  WARN 11548 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 23:24:21.429  INFO 11548 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 23:24:21.837  INFO 11548 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 23:24:21.844  INFO 11548 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 23:24:21.844  INFO 11548 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 23:24:21.845  INFO 11548 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 23:24:21.845  INFO 11548 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 23:24:21.846  INFO 11548 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 23:24:21.846  INFO 11548 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 23:24:21.846  INFO 11548 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@226e07e7
+2021-03-07 23:24:21.859  INFO 11548 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 23:24:21.899  INFO 11548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 23:24:21.899  INFO 11548 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 23:24:21.899  INFO 11548 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 23:24:21.908  INFO 11548 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 4.111 seconds (JVM running for 4.726)
+2021-03-07 23:24:22.151  INFO 11548 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-07 23:24:22.151  INFO 11548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-07 23:24:22.153  INFO 11548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-07 23:24:22.429  INFO 11548 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 23:24:22.434  INFO 11548 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 23:24:46.185  INFO 11548 --- [http-nio-8080-exec-2] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/tickets%7B?page,size,sort}]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:490) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_281]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_281]
+
+2021-03-07 23:32:43.515  INFO 8512 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 8512 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 23:32:43.519  INFO 8512 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: prod
+2021-03-07 23:32:44.368  INFO 8512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 23:32:44.438  INFO 8512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 8 JPA repository interfaces.
+2021-03-07 23:32:44.914  INFO 8512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 23:32:44.920  INFO 8512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 23:32:44.921  INFO 8512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 23:32:45.058  INFO 8512 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 23:32:45.058  INFO 8512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1475 ms
+2021-03-07 23:32:45.234  INFO 8512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 23:32:45.295  INFO 8512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 23:32:45.439  INFO 8512 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 23:32:45.500  INFO 8512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 23:32:46.204  INFO 8512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 23:32:46.215  INFO 8512 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-03-07 23:32:46.514  WARN 8512 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:32:46.519  WARN 8512 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:32:48.020  INFO 8512 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 23:32:48.033  INFO 8512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 23:32:48.695  WARN 8512 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 23:32:49.361  INFO 8512 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 23:32:49.905  INFO 8512 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 23:32:49.921  INFO 8512 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 23:32:49.921  INFO 8512 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 23:32:49.922  INFO 8512 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 23:32:49.923  INFO 8512 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 23:32:49.924  INFO 8512 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 23:32:49.924  INFO 8512 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 23:32:49.924  INFO 8512 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@543da15
+2021-03-07 23:32:49.944  INFO 8512 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 23:32:50.008  INFO 8512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 23:32:50.010  INFO 8512 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 23:32:50.011  INFO 8512 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 23:32:50.024  INFO 8512 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 6.987 seconds (JVM running for 7.653)
+2021-03-07 23:32:50.495  INFO 8512 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 23:32:50.502  INFO 8512 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 23:38:30.480  INFO 11236 --- [main] io.hari.demo.DemoApplication             : Starting DemoApplication using Java 1.8.0_281 on MSI with PID 11236 (C:\Users\Hariom Yadav\Desktop\demo\book-my-show\target\classes started by Hariom Yadav in C:\Users\Hariom Yadav\Desktop\demo\book-my-show)
+2021-03-07 23:38:30.482  INFO 11236 --- [main] io.hari.demo.DemoApplication             : The following profiles are active: dev
+2021-03-07 23:38:31.182  INFO 11236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-07 23:38:31.245  INFO 11236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 8 JPA repository interfaces.
+2021-03-07 23:38:31.851  INFO 11236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-07 23:38:31.869  INFO 11236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-07 23:38:31.870  INFO 11236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-07 23:38:31.977  INFO 11236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-07 23:38:31.977  INFO 11236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1434 ms
+2021-03-07 23:38:32.034  INFO 11236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-07 23:38:32.204  INFO 11236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-07 23:38:32.210  INFO 11236 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:h2db'
+2021-03-07 23:38:32.334  INFO 11236 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-07 23:38:32.394  INFO 11236 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-07 23:38:32.483  INFO 11236 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-07 23:38:32.556  INFO 11236 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-07 23:38:32.715  WARN 11236 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.MovieAttribute] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:38:32.721  WARN 11236 --- [main] o.h.t.d.java.JavaTypeDescriptorRegistry  : HHH000481: Encountered Java type [class io.hari.demo.entity.WeekDay] for which we could not locate a JavaTypeDescriptor and which does not appear to implement equals and/or hashCode.  This can lead to significant performance problems when performing equality/dirty checking involving this Java type.  Consider registering a custom JavaTypeDescriptor or at least implementing equals/hashCode.
+2021-03-07 23:38:33.303  INFO 11236 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-07 23:38:33.322  INFO 11236 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-07 23:38:33.822  WARN 11236 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-07 23:38:34.123  INFO 11236 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-07 23:38:34.524  INFO 11236 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2021-03-07 23:38:34.574  INFO 11236 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-03-07 23:38:34.575  INFO 11236 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2021-03-07 23:38:34.580  INFO 11236 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2021-03-07 23:38:34.581  INFO 11236 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-03-07 23:38:34.582  INFO 11236 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2021-03-07 23:38:34.582  INFO 11236 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2021-03-07 23:38:34.583  INFO 11236 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3fd5d679
+2021-03-07 23:38:34.622  INFO 11236 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-03-07 23:38:35.377  INFO 11236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-07 23:38:35.379  INFO 11236 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2021-03-07 23:38:35.380  INFO 11236 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2021-03-07 23:38:35.395  INFO 11236 --- [main] io.hari.demo.DemoApplication             : Started DemoApplication in 5.371 seconds (JVM running for 6.057)
+2021-03-07 23:38:35.705  INFO 11236 --- [main] io.hari.demo.service.UserService         : showId = 1, seats = [Seat(super=BaseEntity(id=1), seatType=gold), Seat(super=BaseEntity(id=2), seatType=silver), Seat(super=BaseEntity(id=3), seatType=gold)]
+2021-03-07 23:38:35.708  INFO 11236 --- [main] io.hari.demo.service.UserService         : available = [SeatLock(super=BaseEntity(id=1), showId=1, seatId=1, lockStatus=available), SeatLock(super=BaseEntity(id=2), showId=1, seatId=2, lockStatus=available), SeatLock(super=BaseEntity(id=3), showId=1, seatId=3, lockStatus=available)]
+2021-03-07 23:40:55.228  INFO 11236 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-07 23:40:55.228  INFO 11236 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-07 23:40:55.230  INFO 11236 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
