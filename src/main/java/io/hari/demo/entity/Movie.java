@@ -26,9 +26,7 @@ public class Movie extends BaseEntity {
     String movieName;
 
 
-
     //other metadata
-
     Float ratings;
 
     @Convert(converter = MovieAttributeConvertor.class)
