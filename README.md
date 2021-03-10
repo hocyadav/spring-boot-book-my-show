@@ -1,5 +1,5 @@
 # spring-boot-book-my-show
-sample backend for book my show
+Simple backend LLD machine coding implemetaion for book my show
 
 sample deployment : https://book-my-show-backend.herokuapp.com/
 
