@@ -1,6 +1,7 @@
-package io.hari.demo.entity;
+package io.hari.demo.entity.converter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.hari.demo.entity.MovieAttribute;
 import lombok.SneakyThrows;
 
 import javax.persistence.AttributeConverter;

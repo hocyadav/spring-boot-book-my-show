@@ -2,6 +2,7 @@ package io.hari.demo.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.hari.demo.entity.converter.WeekDayConvert;
 import lombok.*;
 
 import javax.persistence.*;

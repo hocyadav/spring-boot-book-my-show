@@ -1,6 +1,8 @@
-package io.hari.demo.entity;
+package io.hari.demo.entity.converter;
 
 import io.hari.demo.dao.SeatDao;
+import io.hari.demo.entity.EntitySeat;
+import io.hari.demo.entity.Seat;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.AttributeConverter;
@@ -13,7 +15,7 @@ import java.util.stream.Stream;
  * @Author Hariom Yadav
  * @create 07-03-2021
  */
-public class EntitySeatConverter implements AttributeConverter<EntitySeat, String> {
+public class EntitySeatConverter implements AttributeConverter<EntitySeat, String> {//m1 using collect join , m2 using object mapper
 
     @Autowired
     SeatDao seatDao;

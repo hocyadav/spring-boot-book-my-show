@@ -1,4 +1,7 @@
-package io.hari.demo.entity;
+package io.hari.demo.entity.converter;
+
+import io.hari.demo.entity.Days;
+import io.hari.demo.entity.WeekDay;
 
 import javax.persistence.AttributeConverter;
 import java.util.List;

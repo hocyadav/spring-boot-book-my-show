@@ -1,6 +1,7 @@
 package io.hari.demo.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.hari.demo.entity.converter.MovieAttributeConvertor;
 import lombok.*;
 
 import javax.persistence.Convert;
