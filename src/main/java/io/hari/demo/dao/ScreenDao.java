@@ -1,6 +1,7 @@
 package io.hari.demo.dao;
 
 import io.hari.demo.entity.Screen;
+import lombok.NonNull;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

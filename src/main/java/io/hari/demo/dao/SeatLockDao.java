@@ -10,4 +10,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface SeatLockDao extends BaseDao<SeatLock> {
     SeatLock findByShowIdAndSeatId(Long showId, Long seatId);
+    SeatLock findByShowIdAndSeatIdAndLockStatus(Long showId, Long seatId, String lockStatus);
 }
