@@ -1,4 +1,4 @@
-package io.hari.demo.entity.converter;
+package io.hari.demo.entity;
 
 import io.hari.demo.entity.Days;
 import io.hari.demo.entity.WeekDay;

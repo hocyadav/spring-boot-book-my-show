@@ -1,4 +1,4 @@
-package io.hari.demo.entity.converter;
+package io.hari.demo.entity;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.hari.demo.entity.MovieAttribute;

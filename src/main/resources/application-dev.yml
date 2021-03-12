@@ -6,5 +6,6 @@ spring.jpa.show-sql: true
 
 app-config:
   simpleKey: "value"
+  timeout : 5s     # working
 
 

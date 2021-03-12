@@ -1,4 +1,4 @@
-package io.hari.demo.entity.converter;
+package io.hari.demo.entity;
 
 import io.hari.demo.dao.SeatDao;
 import io.hari.demo.entity.EntitySeat;

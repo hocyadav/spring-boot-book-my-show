@@ -27,7 +27,7 @@ public class DemoApplication implements CommandLineRunner {
     }
 
     @Autowired
-    AppConfig config;
+    AppConfig appConfig;
     @Autowired
     SeatsService seatsService;
     @Autowired
@@ -47,7 +47,7 @@ public class DemoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("config = " + config);
+        System.out.println("config = " + appConfig);
 
         final Map<String, String> map = new HashMap<>();
         map.put("rating", "4.5");
@@ -226,7 +226,46 @@ public class DemoApplication implements CommandLineRunner {
 //        ShowDto.nonNullTest(null);
 
 
+        //todo :DONE create timeout in lock obj - using localdattime seconds as timeout
+        final SeatLock seatLock = SeatLock.builder()
+                .lockedTime(LocalDateTime.now())
+                .timeoutInSec(Long.valueOf(5))
+                .build();
+        seatLockDao.save(seatLock);
+        System.out.println("seatLock = " + seatLock);
+        final boolean check = seatLock.lockExpiredCheck();
+        System.out.println("check = " + check);
 
+        Thread.sleep(5000);//check after 5 sec
+        System.out.println("lockExpiredCheck = " + seatLock.lockExpiredCheck());
+
+        //todo : DONE create timeout in lock obj - using Localdattime and Duration as timeout
+        final SeatLock seatLock1 = SeatLock.builder()
+                .lockedTime(LocalDateTime.now())
+                .timeOutDuration(Duration.ofSeconds(10))
+                .build();
+        seatLockDao.save(seatLock1);
+        System.out.println("seatLock1 = " + seatLock1);
+        System.out.println("usingDuration = " + seatLock1.lockExpiredUsingDuration());
+        Thread.sleep(10000);
+        System.out.println("usingDuration = " + seatLock1.lockExpiredUsingDuration());
+
+        System.out.println("compareTo = " + Duration.ofSeconds(10).compareTo(Duration.ofSeconds(10)));//0
+        System.out.println("compareTo = " + Duration.ofSeconds(10).compareTo(Duration.ofSeconds(100)));//-1
+        System.out.println("compareTo = " + Duration.ofSeconds(100).compareTo(Duration.ofSeconds(10)));//1
+
+        //todo :DONE read timeouts from config
+        final Duration timeout = appConfig.getTimeout();
+        System.out.println("timeout = " + timeout);
+        System.out.println("appConfig = " + timeout.getSeconds());
+        final SeatLock seatLock2 = SeatLock.builder()
+                .lockedTime(LocalDateTime.now())
+                .timeOutDuration(timeout).build();
+        seatLockDao.save(seatLock2);
+        System.out.println("seatLock2 = " + seatLock2);
+        System.out.println("seatLock2.lockExpiredUsingDuration() = " + seatLock2.lockExpiredUsingDuration());
+        Thread.sleep(5000);//test with 10 sec
+        System.out.println("seatLock2.lockExpiredUsingDuration() = " + seatLock2.lockExpiredUsingDuration());
     }
 }
 
