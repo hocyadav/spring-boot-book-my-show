@@ -27,41 +27,57 @@ public class UserService extends BaseService<User> {
     @Autowired
     ApplicationEventPublisher applicationEventPublisher;
 
+    @Autowired
+    NotificationService notificationService;
+
     public UserService(BaseDao<User> dao) {
         super(dao);
     }
 
-    public void selectSeats(Long showId, List<Seat> seats) {
+    public synchronized void selectSeats(Long showId, List<Seat> seats) {
         if (!validSeats(showId, seats)) {
             throw new RuntimeException("one or more seats are not available at this moment");
         }
-        seats.stream().forEach(s -> {
-            final SeatLock seatLock = seatLockDao.findByShowIdAndSeatId(showId, s.getId());
-            seatLock.setLockStatus("temp_lock");
-            seatLockDao.save(seatLock);
-        });
-        final Event event = Event.builder().name("event1")
+        seats.forEach(s -> changeSeatLockStatus(s, showId, "temp_lock"));
+
+        //event use when user selected seats but not booked, so scheduler will mark them as availablea after timeout
+        final Event event = Event.builder()
+                .name("event1")
                 .type("type1").params(ImmutableMap.of("showId", showId, "seats", seats))
                 .localDateTime(LocalDateTime.now()).build();
         applicationEventPublisher.publishEvent(event);
     }
 
-    private boolean validSeats(Long showId, List<Seat> seats) {
-        log.info("showId = " + showId + ", seats = " + seats);
-        final List<SeatLock> available = seats.stream().map(seat -> {
-            final SeatLock seatLock = seatLockDao.findByShowIdAndSeatId(showId, seat.getId());
-            return seatLock;
-        }).filter(i -> i.getLockStatus().equals("available")).collect(Collectors.toList());
-        log.info("available = " + available);
-        return available.size() == seats.size() ? true : false;
+    private synchronized boolean validSeats(Long showId, List<Seat> requestedSeats) {
+        log.info("showId = " + showId + ", requestedSeats = " + requestedSeats);
+        final List<SeatLock> actualAvailableSeats = requestedSeats.stream()
+                .map(seat -> {
+//                    return seatLockDao.findByShowIdAndSeatId(showId, seat.getId());
+                    return seatLockDao.findByShowIdAndSeatIdAndLockStatus(showId, seat.getId(), "available");
+                })
+//                .filter(i -> i.getLockStatus().equals("available"))//above already we fetched based on status, so not reauired
+                .collect(Collectors.toList());
+        log.info("actualAvailableSeats = " + actualAvailableSeats);
+        return actualAvailableSeats.size() == requestedSeats.size() ? true : false;
     }
 
-    public void paymentFail_Or_UnexpectedError(User user, Show show, List<Seat> seats) {
+    public synchronized void paymentFail_Or_UnexpectedError(User currentUser, Show selectedShow, List<Seat> selectedSeats) {
         //reset lock status
-        seats.forEach(seat -> {
-            final SeatLock seatLock = seatLockDao.findByShowIdAndSeatId(show.getId(), seat.getId());
-            seatLock.setLockStatus("available");
-            seatLockDao.save(seatLock);
+        selectedSeats.forEach(seat -> {
+            changeSeatLockStatus(seat, selectedShow.getId(), "available");
+            log.info("seat lock reset for {} {}", selectedShow.getId(), seat.getId());
         });
+
+        notificationService.sendNotificationToUser(currentUser);//optional, create a notification service
+    }
+
+    public synchronized void changeSeatLockStatus(final Seat seat, final Long showId, final String newStatus) {
+        final SeatLock seatLock = seatLockDao.findByShowIdAndSeatId(showId, seat.getId());
+        seatLock.setLockStatus(newStatus);
+        seatLockDao.save(seatLock);
+    }
+
+    private void sendNotificationToUser(User user) {
+        log.info("payment failed for user {} , please select and book ticket again", user.getName());
     }
 }

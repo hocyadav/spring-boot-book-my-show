@@ -2,6 +2,7 @@ package io.hari.demo;
 
 import com.google.common.collect.ImmutableList;
 import io.hari.demo.config.AppConfig;
+import io.hari.demo.dao.ScreenDao;
 import io.hari.demo.dao.SeatDao;
 import io.hari.demo.dao.SeatLockDao;
 import io.hari.demo.entity.*;
@@ -41,6 +42,8 @@ public class DemoApplication implements CommandLineRunner {
     TicketService ticketService;
     @Autowired
     SeatLockDao seatLockDao;
+    @Autowired
+    ScreenDao screenDao;
 
     @Override
     public void run(String... args) throws Exception {
@@ -219,6 +222,11 @@ public class DemoApplication implements CommandLineRunner {
 
         System.out.println("collect6 = " + collect6.get(true));
 
+        ShowDto.nonNullTest("hari");
+//        ShowDto.nonNullTest(null);
+
+
+
     }
 }
 
@@ -232,6 +240,10 @@ class ShowDto {
     String movieName;
     Long movieLength;
     Integer availableSeats;
+
+    public static void nonNullTest(@NonNull String string) {//null check of string, throw exception
+        System.out.println("string = " + string);
+    }
 }
 
 
