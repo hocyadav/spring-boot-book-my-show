@@ -1,8 +1,10 @@
 package io.hari.demo.entity;
 
 import lombok.*;
+import org.springframework.beans.factory.annotation.Value;
 
 import javax.persistence.Entity;
+import javax.persistence.PrePersist;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
@@ -44,6 +46,17 @@ public class SeatLock extends BaseEntity {
         //case 2 : diff 10 , diff with timeout = 90 that means timeout
         return diffWithTimeout < 0 ? false : true;
 //        return diffWithTimeout >= 0 ? true : false;//m2
+    }
+
+    @PrePersist
+    public void prePersist() {
+        if (timeOutDuration == null) {
+            timeOutDuration = Duration.ofSeconds(100);
+        }
+
+        if (timeoutInSec == null) {
+            timeoutInSec = Long.valueOf(300);
+        }
     }
 
 }
