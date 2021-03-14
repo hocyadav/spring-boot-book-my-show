@@ -3,8 +3,7 @@ package io.hari.demo.entity;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * @Author Hariom Yadav
