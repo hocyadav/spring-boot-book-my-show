@@ -5,6 +5,7 @@ import io.hari.demo.config.AppConfig;
 import io.hari.demo.dao.ScreenDao;
 import io.hari.demo.dao.SeatDao;
 import io.hari.demo.dao.SeatLockDao;
+import io.hari.demo.dao.ShowDao;
 import io.hari.demo.entity.*;
 import io.hari.demo.service.*;
 import lombok.*;
@@ -32,6 +33,8 @@ public class DemoApplication implements CommandLineRunner {
     SeatsService seatsService;
     @Autowired
     ShowService showService;
+    @Autowired
+    ShowDao showDao;
     @Autowired
     MovieService movieService;
     @Autowired
@@ -266,6 +269,18 @@ public class DemoApplication implements CommandLineRunner {
         System.out.println("seatLock2.lockExpiredUsingDuration() = " + seatLock2.lockExpiredUsingDuration());
         Thread.sleep(5000);//test with 10 sec
         System.out.println("seatLock2.lockExpiredUsingDuration() = " + seatLock2.lockExpiredUsingDuration());
+
+        //todo : DONE : create a seat and lock and test for rollback if any one fail
+        final Seat seat = Seat.builder().seatType("platinum").build();
+//        seatsService.saveSeatAndLock(show1.getId(), seat);
+
+        //todo : NOT DONE : link new seat id to show, required bi directional mapping
+//        show1.getSeats().add(seat);//error coz of uni direction not bidirectional
+//        showDao.save(show1);
+
+        System.err.println(show1.getId() +" "+seat.getId());
+//        showDao.addNewShowSeat(show1.getId(), seat.getId());//not working
+
     }
 }
 
