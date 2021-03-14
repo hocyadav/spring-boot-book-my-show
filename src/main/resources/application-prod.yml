@@ -6,10 +6,12 @@ spring.datasource.password: hariom
 
 ## 2. Hibernate config
 spring.jpa.show-sql: true
-spring.jpa.hibernate.ddl-auto: create-drop
+#spring.jpa.hibernate.ddl-auto: create-drop
+spring.jpa.hibernate.ddl-auto: create
 spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
 
 app-config:
   simpleKey: "value"
+  timeout : 5s     # working
 
 
