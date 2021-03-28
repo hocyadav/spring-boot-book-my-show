@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.time.*;
@@ -21,6 +22,7 @@ import java.util.stream.Collectors;
 
 @SpringBootApplication
 @EnableScheduling
+@EnableCaching//1. before that dependency in pom
 public class DemoApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
@@ -129,6 +131,11 @@ public class DemoApplication implements CommandLineRunner {
                 .seatIds(immutableList.stream().map(i -> i.getId().toString()).collect(Collectors.joining(",")))
                 .build();
         ticketService.save(ticket);
+
+        final Ticket ticket1 = ticketService.fetchTicket(ticket.getId());
+        System.out.println("--------  "+ticket1);
+        final Ticket ticket2 = ticketService.fetchTicket(ticket.getId());
+        System.out.println("--------  "+ticket2);
 
         //attach ticket to user1
         hariom.setTickets(Arrays.asList(ticket));//after creating ticket set to user1 and update user1 db

@@ -4,11 +4,12 @@ import io.hari.demo.dao.BaseDao;
 import io.hari.demo.dao.SeatLockDao;
 import io.hari.demo.entity.SeatLock;
 import io.hari.demo.entity.Ticket;
-import io.hari.demo.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
+import java.util.Optional;
 
 /**
  * @Author Hariom Yadav
@@ -54,5 +55,17 @@ public class TicketService extends BaseService<Ticket> {
             });
         return fetchedTicket;
         }
+    }
+
+    @Cacheable("tickets")//2
+    public Ticket fetchTicket(Long ticketId) {//testing caching
+        final Ticket ticket = daoCall(ticketId);
+        return ticket;
+    }
+
+    private Ticket daoCall(Long ticketId) {
+        System.out.println("db call");//3 for testing
+        final Optional<Ticket> ticketOptional = dao.findById(ticketId);
+        return ticketOptional.get();
     }
 }
