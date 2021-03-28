@@ -27,7 +27,8 @@ public class User extends BaseEntity {
 
     //	@OneToMany(fetch = FetchType.EAGER)//remove cascade and store in db before passing here
     @OneToMany(cascade = CascadeType.ALL)
-    List<Ticket> tickets = new ArrayList<>();
+    List<Ticket> tickets = new ArrayList<>();//TODO : change to Enum and inside enum store List<Integer> ticket id,
+    // so that every time we can easily add new ticket
 
     //other metadata;
 }

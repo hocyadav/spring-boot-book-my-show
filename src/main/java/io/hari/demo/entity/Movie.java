@@ -29,7 +29,7 @@ public class Movie extends BaseEntity {
     //other metadata
     Float ratings;
 
-    @Convert(converter = MovieAttributeConvertor.class)
+    @Convert(converter = MovieAttributeConvertor.class)//move to base entity and test
     MovieAttribute movieAttribute;
 
     @Transient
